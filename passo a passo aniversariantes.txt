@@ -1,0 +1,42 @@
+--passo 1 - criar o projeto a partir do template
+- yo @microsoft/sharepoint
+
+--passo 2 - Criar webpart de cadastro de aniversariantes
+
+- Nome da webpart - CadastraAniversariantes
+- Descrição - WebPart que permite cadastrar um aniversariante
+
+--passo 3 - Criar webpart que lista os aniversariantes
+
+yo @microsoft/sharepoint
+- Nome da webpart - ListaAniversariantes
+- Descrição - Webpart que lista os aniversariantes
+
+--passo 4 - instalar o pnp, forcei a versão porque essa esta homologada através do projeto CDM
+npm install @pnp/logging@1.3.7 @pnp/common@1.3.7 @pnp/odata@1.3.7 @pnp/sp@1.3.7 --save
+
+
+passo 5 - INSTALAR BOOTSTRAP, JQUERY E FONT AWESOME
+
+npm install jquery --save
+npm install @types/jquery --save-dev
+npm install bootstrap@4 --save
+npm install @types/bootstrap@4 --save-dev
+npm install --save-dev @fortawesome/fontawesome-free
+
+
+
+--Criar lista Areas2
+Title	            Texto com uma linha
+
+
+--Criar lista Aniversariantes2
+Title             Texto com uma linha
+Area	            Texto com uma linha
+DataAniversario	  Data e Hora
+UrlFoto	          Texto com uma linha
+Observacao	      Texto com várias linhas
+
+
+--instalar o url-loader com a versão indicada
+npm install url-loader@2.2.0 --save-dev
